@@ -30,7 +30,7 @@
     <main>
         <section id="contact">
             <h2>Contact</h2>
-            <form id="contactForm" action="https://formspree.io/f/xpwqvkjg" method="post">
+            <form id="contactForm" action="https://formspree.io/f/xpwqvkjg" method="post" onsubmit="clearForm()">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="First name and last name" required>
@@ -83,6 +83,10 @@
                 navMenu.style.display = 'none';
             }
         });
+
+        function clearForm() {
+            document.getElementById('contactForm').reset();
+        }
     </script>
 </body>
 </html>
