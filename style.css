@@ -7,8 +7,14 @@
 html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Prevent scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
     background-color: black; /* Set the background color to black */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
 }
 
 body.contact-page {
@@ -27,7 +33,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Position it at the top */
     z-index: 1001; /* Ensure the header is above other elements */
     height: 60px; /* Set a fixed height for the header */
 }
@@ -269,6 +276,7 @@ main {
     align-items: center;
     justify-content: center; /* Center the form horizontally */
     flex-direction: column; /* Stack sections vertically */
+    padding-top: 70px; /* Add padding to the top to avoid content being hidden behind the fixed header */
 }
 
 #contact-container {
@@ -280,7 +288,7 @@ main {
     width: 100%; /* Ensure the contact section spans 100% width */
     max-width: 450px; /* Increase the maximum width of the form */
     margin: 0 auto; /* Center the form within the contact section */
-    margin-top: -80px; /* Move the contact form upwards */
+    margin-top: -70px; /* Move the contact form upwards by 77px instead of 80px */
 }
 
 #contact h2 {
