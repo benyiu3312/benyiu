@@ -11,6 +11,14 @@ html, body {
     background-color: black; /* Set the background color to black */
 }
 
+body.contact-page {
+    overflow-y: auto; /* Allow vertical scrolling on the contact page */
+}
+
+body.contact-page::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
 header {
     background-color: black; /* Set the header background color to black */
     color: #bbb;
