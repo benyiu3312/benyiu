@@ -148,11 +148,11 @@ function openLightbox(button) {
     const uniqueImages = new Set(); // Use a Set to store unique image sources
 
     images.forEach(function(img, index) {
-        if (!uniqueImages.has(img.src)) {
-            uniqueImages.add(img.src); // Add the image source to the Set
+        if (!uniqueImages.has(img.dataset.src)) {
+            uniqueImages.add(img.dataset.src); // Add the image source to the Set
 
             const newImg = document.createElement('img');
-            newImg.src = img.src;
+            newImg.src = img.dataset.src; // Preload the image
             newImg.alt = img.alt;
             newImg.dataset.index = index; // Store the index of the image
             newImg.addEventListener('click', function() {
