@@ -351,7 +351,7 @@ input[type="submit"]:hover {
 }
 
 #em {
-    margin-top: 0px; /* Adjusted to move the em box upwards */
+    margin-top: -25px; /* Adjusted to move the em box upwards */
     text-align: center; /* Center the text in the em section */
     color: white; /* Set the text color to white */
 }
