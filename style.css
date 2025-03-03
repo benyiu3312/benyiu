@@ -351,7 +351,7 @@ input[type="submit"]:hover {
 }
 
 #em {
-    margin-top: 20px; /* Add space between the contact and em sections */
+    margin-top: 0px; /* Adjusted to move the em box upwards */
     text-align: center; /* Center the text in the em section */
     color: white; /* Set the text color to white */
 }
@@ -470,7 +470,7 @@ input[type="submit"]:hover {
     max-width: 1400px; /* Increase the max-width to allow more space */
 }
 
-.lightbox .close {
+lightbox .close {
     position: absolute;
     top: 20px;
     right: 35px;
