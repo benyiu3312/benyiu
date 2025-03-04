@@ -127,7 +127,7 @@ header .nav-container::after {
 header h1 {
     position: absolute;
     top: 5px;
-    left: -2px;
+    left: -10px; /* Adjusted to move the h1 element to the left */
     line-height: 50px; /* Adjusted line-height */
     background-image: url('quick tour images/cindy.png'); /* Ensure the path is correct */
     background-repeat: no-repeat;
@@ -231,7 +231,7 @@ header li a.active {
     header a h1 {
         position: absolute;
         top: 5px;
-        left: 10px; /* Stick to the left edge */
+        left: 0px; /* Stick to the left edge */
         width: 170px;
         height: 50px;
         background-image: url('quick tour images/cindy.png'); /* Ensure the path is correct */
