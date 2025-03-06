@@ -51,8 +51,16 @@ function loadImages() {
             "2.jpg",
             "3.jpg",
             "4.jpg",
-            "5.jpg"
-            // Add more filenames as needed
+            "5.jpg",
+            "螢幕截圖 2023-04-23 下午2.59.35.png",
+            "螢幕截圖 2023-04-23 下午2.59.44.png",
+            "螢幕截圖 2023-04-23 下午2.59.51.png",
+            "螢幕截圖 2023-04-23 下午2.59.59.png",
+            "螢幕截圖 2023-04-23 下午3.00.08.png",
+            "螢幕截圖 2023-04-23 下午3.00.16.png",
+            "螢幕截圖 2023-04-23 下午3.00.23.png",
+            "螢幕截圖 2023-04-23 下午3.00.32.png",
+            "螢幕截圖 2023-04-23 下午3.00.40.png"
         ];
         imageDirectory = 'fan art images';
     } else if (window.location.pathname.includes('concepts.html')) {

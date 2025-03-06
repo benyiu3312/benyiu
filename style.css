@@ -506,9 +506,8 @@ lightbox .close {
 
 /* Masonry grid styles */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    column-count: 5;
+    column-gap: 5px;
     width: 100%;
     max-width: 1400px; /* Increase the max-width to allow more space */
     margin: auto;
@@ -516,7 +515,7 @@ lightbox .close {
 
 .grid img {
     width: 100%;
-    height: 100%;
+    margin-bottom: 0px;
     object-fit: contain; /* Ensure the image covers the entire area */
     cursor: pointer; /* Make images clickable */
 }
@@ -531,21 +530,33 @@ lightbox .close {
 }
 
 /* Responsive adjustments */
+@media (max-width: 2500px) {
+    .grid {
+        column-count: 6; /* Ensure at least 2 columns for very small screens */
+    }
+}
+
+@media (max-width: 2000px) {
+    .grid {
+        column-count: 5; /* Ensure at least 2 columns for very small screens */
+    }
+}
+
 @media (max-width: 1200px) {
     .grid {
-        grid-template-columns: repeat(auto-fill);
+        column-count: 4; /* Adjust to 3 columns for medium screens */
     }
 }
 
 @media (max-width: 800px) {
     .grid {
-        grid-template-columns: repeat(auto-fill);
+        column-count: 3; /* Ensure at least 2 columns for very small screens */
     }
 }
 
 @media (max-width: 500px) {
     .grid {
-        grid-template-columns: repeat(2, 1fr); /* Ensure at least 2 columns */
+        column-count: 2; /* Adjust to 2 columns for smaller screens */
     }
 }
 
