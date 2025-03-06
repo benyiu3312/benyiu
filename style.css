@@ -423,12 +423,12 @@ input[type="submit"]:hover {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 4px; /* Make the arrows thinner */
+    padding: 0px; /* Make the arrows thinner */
     height: 25px; /* Make the arrows higher */
     margin-top: -25px; /* Adjust margin to center vertically */
     color: rgba(228, 228, 228, 0.407);
     font-weight: none;
-    font-size: 10px;
+    font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
