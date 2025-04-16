@@ -39,17 +39,6 @@ header {
     height: 60px; /* Set a fixed height for the header */
 }
 
-header::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1.5px; /* Adjust the height of the underline */
-    background-color: #bbb; /* Adjust the color of the underline */
-    position: absolute;
-    bottom: -2px; /* Position the underline just below the header */
-    left: 0;
-}
-
 header a {
     color: #bbb;
     text-decoration: none;
@@ -126,16 +115,16 @@ header .nav-container::after {
 
 header h1 {
     position: absolute;
-    top: 5px;
-    left: -10px; /* Adjusted to move the h1 element to the left */
+    top: 8px; /* Adjusted to lower the text */
+    left: 50px; /* Adjusted to move the text to the right */
     line-height: 50px; /* Adjusted line-height */
-    background-image: url('quick tour images/cindy.png'); /* Ensure the path is correct */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 170px;
-    height: 50px;
-    text-indent: -9999px;
+    font-size: 24px; /* Set font size for the text */
+    font-family: Arial, sans-serif; /* Set font family */
+    color: #bbb; /* Set text color */
+    text-indent: 0; /* Remove text indentation */
+    background: none; /* Remove background image */
+    width: auto; /* Adjust width to fit the text */
+    height: auto; /* Adjust height to fit the text */
 }
 
 header ul {
@@ -228,17 +217,18 @@ header li a.active {
         right: 10px; /* Adjust as needed */
     }
 
-    header a h1 {
+    header h1 {
         position: absolute;
-        top: 5px;
-        left: 0px; /* Stick to the left edge */
-        width: 170px;
-        height: 50px;
-        background-image: url('quick tour images/cindy.png'); /* Ensure the path is correct */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        text-indent: -9999px;
+        top: 6px; /* Adjusted to lower the text */
+        left: 50px; /* Adjusted to move the text to the right */
+        line-height: 50px; /* Adjusted line-height */
+        font-size: 24px; /* Set font size for the text */
+        font-family: Arial, sans-serif; /* Set font family */
+        color: #bbb; /* Set text color */
+        text-indent: 0; /* Remove text indentation */
+        background: none; /* Remove background image */
+        width: auto; /* Adjust width to fit the text */
+        height: auto; /* Adjust height to fit the text */
     }
 }
 
