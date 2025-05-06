@@ -120,11 +120,12 @@ header h1 {
     line-height: 50px; /* Adjusted line-height */
     font-size: 24px; /* Set font size for the text */
     font-family: Arial, sans-serif; /* Set font family */
-    color: #bbb; /* Set text color */
+    color: tomato; /* Change text color to tomato */
     text-indent: 0; /* Remove text indentation */
     background: none; /* Remove background image */
     width: auto; /* Adjust width to fit the text */
     height: auto; /* Adjust height to fit the text */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 header ul {
@@ -218,17 +219,8 @@ header li a.active {
     }
 
     header h1 {
-        position: absolute;
-        top: 6px; /* Adjusted to lower the text */
-        left: 50px; /* Adjusted to move the text to the right */
-        line-height: 50px; /* Adjusted line-height */
-        font-size: 24px; /* Set font size for the text */
-        font-family: Arial, sans-serif; /* Set font family */
-        color: #bbb; /* Set text color */
-        text-indent: 0; /* Remove text indentation */
-        background: none; /* Remove background image */
-        width: auto; /* Adjust width to fit the text */
-        height: auto; /* Adjust height to fit the text */
+        font-size: 24px; /* Keep font size consistent */
+        line-height: 50px; /* Keep line height consistent */
     }
 }
 
