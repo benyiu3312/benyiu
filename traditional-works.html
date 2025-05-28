@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="512x512.png" sizes="512x512" type="image/png">
 </head>
-<body>
+<body data-page="traditional-works">
     <header>
         <a href="index.html"><h1>Ben Yiu</h1></a>
         <div class="nav-container">
@@ -24,29 +24,14 @@
                 </ul>
             </nav>
         </div>
-        <div class="lightbox-button-container">
-            <button id="lightboxButton"><i class="fa fa-th-large" aria-hidden="true"></i></button>
-        </div>    </header>
+    </header>
     <main>
-        <section class="slider">
-            <div class="slides" id="slides-container">
-                <!-- Images will be dynamically loaded here -->
-            </div>
-            <div class="slider-overlay left" onclick="plusSlides(-1)"></div>
-            <div class="slider-overlay right" onclick="plusSlides(1)"></div>
-            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-            <button class="next" onclick="plusSlides(1)">&#10095;</button>
-        </section>
-    </main>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" style="display: none;">
-        <div class="lightbox-content">
-            <div class="grid" id="lightbox-grid">
-                <!-- Images will be dynamically loaded here -->
-            </div>
+        <div class="grid" id="traditionalWorksGrid"></div>
+        <div class="lightbox-overlay" id="lightboxOverlay">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
         </div>
-    </div>
+    </main>
 
     <script src="script.js"></script>
     <script>
